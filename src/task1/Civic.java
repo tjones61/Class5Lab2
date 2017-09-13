@@ -9,7 +9,7 @@ package task1;
  *
  * @author tjones61
  */
-public class Civic {
+public class Civic extends Honda{
     private String color;
     private String transmission;
 

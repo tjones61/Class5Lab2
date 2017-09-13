@@ -9,7 +9,7 @@ package task1;
  *
  * @author tjones61
  */
-public class Honda {
+public class Honda extends Car{
     private String wheelDrive;
 
     public String getWheelDrive() {
