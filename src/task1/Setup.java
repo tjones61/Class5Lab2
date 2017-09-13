@@ -15,7 +15,18 @@ public class Setup {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Civic myCar = new Civic();
+        myCar.setDoors(2);
+        myCar.setCylinders(4);
+        myCar.setWheelDrive("front");
+        myCar.setColor("silver");
+        myCar.setTransmission("automatic");
         
+        System.out.println("Doors: " + myCar.getDoors() + 
+                            "\nCylinders: " + myCar.getCylinders() + 
+                            "\nWheel Drive: " + myCar.getWheelDrive() +
+                            "\nColor: " + myCar.getColor() +
+                            "\nTransmission: " + myCar.getTransmission());
     }
     
 }
