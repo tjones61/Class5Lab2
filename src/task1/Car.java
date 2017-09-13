@@ -18,7 +18,7 @@ public class Car {
     }
 
     public void setDoors(int doors) {
-        if(doors<2||doors>4||doors%2 !=0){
+        if(doors!= 2||doors!=4){
             throw new IllegalArgumentException("This is not a valid amount of doors");
         }
         this.doors = doors;
