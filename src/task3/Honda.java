@@ -9,6 +9,19 @@ package task3;
  *
  * @author tjones61
  */
-public class Honda {
-    
+public abstract class Honda implements Car{
+    private String wheelDrive;
+    private int doors;
+    private int cylinders;
+
+    public String getWheelDrive() {
+        return wheelDrive;
+    }
+
+    public void setWheelDrive(String wheelDrive) {
+        if(!(wheelDrive.equals("four"))||!(wheelDrive.equals("front"))||!(wheelDrive.equals("rear"))){
+            throw new IllegalArgumentException("This is not a valid wheel drive");
+        }
+        this.wheelDrive = wheelDrive;
+    }
 }

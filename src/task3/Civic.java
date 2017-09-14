@@ -9,6 +9,26 @@ package task3;
  *
  * @author tjones61
  */
-public class Civic {
-    
+public abstract class Civic extends Honda{
+    private String color;
+    private String transmission;
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getTransmission() {
+        return transmission;
+    }
+
+    public void setTransmission(String transmission) {
+        if(!(transmission.equals("manual"))||!(transmission.equals("automatic"))){
+            throw new IllegalArgumentException("This is not a valid transmission");
+        }
+        this.transmission = transmission;
+    }
 }

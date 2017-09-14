@@ -9,6 +9,14 @@ package task3;
  *
  * @author tjones61
  */
-public class Car {
-    
+public interface Car {
+
+    public int getDoors();
+
+    public void setDoors(int doors);
+
+    public int getCylinders();
+
+    public void setCylinders(int cylinders);
+
 }
